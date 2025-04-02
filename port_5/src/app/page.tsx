@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import Navbar from "./(app)/components/Navbar";
 import { Montserrat } from "next/font/google";
 import Carousel1 from "./(app)/components/Carousel1";
+import { TabContent, Tabs, TabTitle } from "./(app)/components/Tabs";
 const montserrat500 = Montserrat({
   subsets: ["latin"],
   weight: "500",
@@ -40,7 +41,135 @@ export default function Home() {
         </div>
       </div>
       <div className="py-12" id="part2">
-        <Carousel1/>
+        <Carousel1 />
+      </div>
+      <div
+        className="bg-[#F5DA2A] py-40 my-20 px-20 flex flex-col justify-center items-center text-xl"
+        id="part3"
+      >
+        <p className="">RUUL IN A NUTSHELL</p>
+        <p className="text-6xl/20 text-[#002B28] text-center w-2/3 mx-auto overflow-hidden">
+          Ruul resells your professional services
+          <motion.span
+            initial={{ x: 0 }}
+            animate={{ x: 0 }} // Keeps it at x:0 when not hovered
+            whileHover={{ x: 0, rotate: -10 }}
+            transition={{ duration: 0.8, type: "spring" }}
+            className="bg-[#E44506] rounded-4xl inline-block px-6  border-2 border-[#E44506] hover:border-black"
+          >
+            🧑‍💻
+          </motion.span>{" "}
+          to your clients, handles Billing & Payment Collection
+          <motion.span
+            initial={{ x: 0 }}
+            animate={{ x: 0 }} // Keeps it at x:0 when not hovered
+            whileHover={{ x: 0, rotate: -10 }}
+            transition={{ duration: 0.8, type: "spring" }}
+            className="bg-[#002B28] rounded-4xl inline-block px-6 py-1 hover:border-2 hover:border-black"
+          >
+            💳
+          </motion.span>{" "}
+          so you
+          <motion.span
+            initial={{ x: 0 }}
+            animate={{ x: 0 }} // Keeps it at x:0 when not hovered
+            whileHover={{ x: 0, rotate: -10 }}
+            transition={{ duration: 0.8, type: "spring" }}
+            className="bg-[#B8F0FC] rounded-4xl inline-block px-6 py-1 hover:border-2 my-2 hover:border-black"
+          >
+            don&apos;t have to.
+          </motion.span>
+        </p>
+      </div>
+      <div className="">
+        <Tabs>
+          <TabTitle>Billing & Checkout</TabTitle>
+          <TabContent>
+            <div className="p-24 bg-[#F1F4F0] rounded-xl mb-8 flex flex-col justify-center items-center">
+              <p className="my-4 text-lg">
+                Provide services. Bill your client. Get paid. Repeat. All with
+                Ruul’s Billing & Checkout system.
+              </p>
+              <button className="bg-[#F5DA2A] px-6 py-4 rounded-full border my-4">
+                Learn more
+              </button>
+              <div className="flex justify-center">
+                <img
+                  src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9caff52c415dcf57378_new-invoice.avif"
+                  alt=""
+                  className=" w-1/2 h-1/2"
+                />
+                <img
+                  src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9ca34f5bf31b2e9aba2_checkout.avif"
+                  alt=""
+                  className=" w-1/2 h-1/2"
+                />
+              </div>
+            </div>
+          </TabContent>
+          <TabTitle>Payment Collection</TabTitle>
+          <TabContent>
+            <div className="p-24 bg-[#F1F4F0] rounded-xl mb-8 flex flex-col justify-center items-center">
+              <p className="my-4 text-lg">
+                Provide services. Bill your client. Get paid. Repeat. All with
+                Ruul’s Billing & Checkout system.
+              </p>
+              <button className="bg-[#F5DA2A] px-6 py-4 rounded-full border my-4">
+                Learn more
+              </button>
+              <div className="flex justify-center">
+                <img
+                  src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9caff52c415dcf57378_new-invoice.avif"
+                  alt=""
+                  className=" w-1/2 h-1/2"
+                />
+                <img
+                  src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9ca34f5bf31b2e9aba2_checkout.avif"
+                  alt=""
+                  className=" w-1/2 h-1/2"
+                />
+              </div>
+            </div>
+          </TabContent>
+          <TabTitle>Tax & Compliance</TabTitle>
+          <TabContent>
+            <div className="p-24 bg-[#F1F4F0] rounded-xl mb-8 flex flex-col justify-center items-center">
+              <p className="my-4 text-lg">
+                Provide services. Bill your client. Get paid. Repeat. All with
+                Ruul’s Billing & Checkout system.
+              </p>
+              <button className="bg-[#F5DA2A] px-6 py-4 rounded-full border my-4">
+                Learn more
+              </button>
+              <div className="flex justify-center">
+                <img
+                  src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9caff52c415dcf57378_new-invoice.avif"
+                  alt=""
+                  className=" w-1/2 h-1/2"
+                />
+                <img
+                  src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9ca34f5bf31b2e9aba2_checkout.avif"
+                  alt=""
+                  className=" w-1/2 h-1/2"
+                />
+              </div>
+            </div>
+          </TabContent>
+          <TabTitle>CRM & Analytics</TabTitle>
+          <TabContent>
+          <div className="p-24 bg-[#F1F4F0] rounded-xl mb-8 flex flex-col justify-center items-center">
+              <p className="my-4 text-lg">
+                Provide services. Bill your client. Get paid. Repeat. All with
+                Ruul’s Billing & Checkout system.
+              </p>
+              <button className="bg-[#F5DA2A] px-6 py-4 rounded-full border my-4">Learn more</button>
+              <div className="flex justify-center">
+                <img src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9caff52c415dcf57378_new-invoice.avif" alt="" className=" w-1/2 h-1/2" />
+                <img src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9ca34f5bf31b2e9aba2_checkout.avif" alt="" className=" w-1/2 h-1/2" />
+              </div>
+            </div>
+          </TabContent>
+        </Tabs>
       </div>
     </div>
   );
