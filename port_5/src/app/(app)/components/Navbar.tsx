@@ -17,21 +17,21 @@ export default function Navbar() {
           className="w-12 mx-8"
         />
         <div className="flex flex-row">
-          <Link href="" className="text-[#003E39] mx-4 ">
+          <Link href="" className="text-[#003E39] text-lg mx-4 ">
             How it works
           </Link>
           <div className="flex mx-4">
-            <Link href="" className="text-[#003E39] ">
+            <Link href="" className="text-[#003E39]  text-lg">
               Features
             </Link>
             <ChevronDown />
           </div>
 
-          <Link href="" className="text-[#003E39] mx-4 ">
+          <Link href="" className="text-[#003E39] mx-4  text-lg">
             Pricing
           </Link>
           <div className="flex mx-4">
-            <Link href="" className="text-[#003E39] ">
+            <Link href="" className="text-[#003E39]  text-lg">
               Resources
             </Link>
             <ChevronDown/>
