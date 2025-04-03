@@ -17,6 +17,7 @@ export default function Home() {
   return (
     <div className={`${montserrat500.className}`}>
       <Navbar />
+
       <div className="py-20 px-8 text-center" id="part1">
         <p
           className={`text-8xl text-[#002B28] text-center font-bold ${montserrat900.className}`}
@@ -40,9 +41,11 @@ export default function Home() {
           </button>
         </div>
       </div>
+
       <div className="py-12" id="part2">
         <Carousel1 />
       </div>
+
       <div
         className="bg-[#F5DA2A] py-40 my-20 px-20 flex flex-col justify-center items-center text-xl"
         id="part3"
@@ -81,6 +84,7 @@ export default function Home() {
           </motion.span>
         </p>
       </div>
+
       <div className="">
         <Tabs>
           <TabTitle>Billing & Checkout</TabTitle>
@@ -157,20 +161,53 @@ export default function Home() {
           </TabContent>
           <TabTitle>CRM & Analytics</TabTitle>
           <TabContent>
-          <div className="p-24 bg-[#F1F4F0] rounded-xl mb-8 flex flex-col justify-center items-center">
+            <div className="p-24 bg-[#F1F4F0] rounded-xl mb-8 flex flex-col justify-center items-center">
               <p className="my-4 text-lg">
                 Provide services. Bill your client. Get paid. Repeat. All with
                 Ruul’s Billing & Checkout system.
               </p>
-              <button className="bg-[#F5DA2A] px-6 py-4 rounded-full border my-4">Learn more</button>
+              <button className="bg-[#F5DA2A] px-6 py-4 rounded-full border my-4">
+                Learn more
+              </button>
               <div className="flex justify-center">
-                <img src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9caff52c415dcf57378_new-invoice.avif" alt="" className=" w-1/2 h-1/2" />
-                <img src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9ca34f5bf31b2e9aba2_checkout.avif" alt="" className=" w-1/2 h-1/2" />
+                <img
+                  src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9caff52c415dcf57378_new-invoice.avif"
+                  alt=""
+                  className=" w-1/2 h-1/2"
+                />
+                <img
+                  src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9ca34f5bf31b2e9aba2_checkout.avif"
+                  alt=""
+                  className=" w-1/2 h-1/2"
+                />
               </div>
             </div>
           </TabContent>
         </Tabs>
       </div>
+
+      <div className="flex justify-center w-2/3 items-center mx-auto py-20">
+        <div className="flex flex-col items-center basis-1/3 mx-12">
+          <img src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6718745a731ac80375b19807_icon-1.avif" alt="" className="w-44" />
+          <p className="text-2xl py-4">Global coverage
+          </p>
+          <p className="text-xl text-center py-2">Invoice your business clients in 190 countries and get paid in 140 currencies.</p>
+        </div>
+        <div className="flex flex-col items-center basis-1/3 mx-12">
+          <img src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6718745993f3aece411b31ee_icon-2.avif" alt="" className="w-44" />
+          <p className="text-2xl py-4">Faster payments
+          </p>
+          <p className="text-xl text-center py-2">Reduce your payment collection time, and cut down on unpaid invoices.</p>
+        </div>
+        <div className="flex flex-col items-center basis-1/3 mx-12">
+          <img src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6718745a1597b1ca9285c3ef_icon-3.avif" alt="" className="w-44" />
+          <p className="text-2xl py-4">Pay-as-you-go
+          </p>
+          <p className="text-xl text-center py-2">No upfront payments or monthly subscriptions. Pay only when you use.</p>
+        </div>
+      </div>
+
+      
     </div>
   );
 }
