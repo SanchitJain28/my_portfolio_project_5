@@ -13,7 +13,7 @@ export function Tabs({ children }) {
 
   return (
     <div>
-      <div className="flex w-full items-center justify-center p-2 my-12 rounded-ful">
+      <div className="lg:flex lg:flex-row hidden w-full items-center justify-center p-2 my-12 rounded-full">
         {titles.map((tab, index) => {
           return (
             <div className="" key={index}>
@@ -33,19 +33,34 @@ export function Tabs({ children }) {
           );
         })}
       </div>
-      <AnimatePresence>
-        <motion.div
-          key={activeTab} // Key ensures re-render when tab changes
-          className="px-20 w-2/3 mx-auto"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-        >
-          {tabContent[activeTab]}
-        </motion.div>
-      </AnimatePresence>
+      <div className="lg:block hidden">
+        <AnimatePresence>
+          <motion.div
+            key={activeTab} // Key ensures re-render when tab changes
+            className="lg:px-20 lg:w-2/3  mx-auto"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+          >
+            {tabContent[activeTab]}
+          </motion.div>
+        </AnimatePresence>
+      </div>
+      <div className="lg:hidden">
+        {tabContent.map((tab, index) => {
+          return (
+            <div key={index}>
+              {tab}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
-export const TabTitle = ({ children }: { children: ReactNode }) => <>{children}</>;
-export const TabContent = ({ children }:{ children: ReactNode }) => <>{children}</>;
+export const TabTitle = ({ children }: { children: ReactNode }) => (
+  <>{children}</>
+);
+export const TabContent = ({ children }: { children: ReactNode }) => (
+  <>{children}</>
+);

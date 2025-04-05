@@ -17,9 +17,23 @@ export default function Carousel1() {
         // freeMode={true}
         modules={[Autoplay, Pagination, Navigation]}
         spaceBetween={70}
-        slidesPerView={2.7}
+        slidesPerView={1.3}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
+        breakpoints={{
+          640: {
+            slidesPerView: 1.3,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 1.5,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 2.5,
+            spaceBetween: 50,
+          },
+        }}
       >
         <SwiperSlide>
           <div className="rounded-xl h-80 bg-[#ECD425]"></div>
@@ -32,7 +46,6 @@ export default function Carousel1() {
           {" "}
           <div className="rounded-xl h-80 bg-[#E35B05]"></div>
         </SwiperSlide>
-       
       </Swiper>
     </div>
   );

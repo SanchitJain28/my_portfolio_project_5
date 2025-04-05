@@ -16,12 +16,12 @@ const montserrat900 = Montserrat({
 });
 export default function Home() {
   return (
-    <div className={`${montserrat500.className}`}>
+    <div className={`${montserrat500.className} overflow-hidden`}>
       <Navbar />
 
-      <div className="py-20 px-8 text-center" id="part1">
+      <div className="py-20 lg:px-8 text-center" id="part1">
         <p
-          className={`text-8xl text-[#002B28] text-center font-bold ${montserrat900.className}`}
+          className={`xl:text-8xl lg:text-5xl text-4xl text-[#002B28] text-center font-bold ${montserrat900.className}`}
         >
           INDEPENDENT’S
           <br />
@@ -29,15 +29,15 @@ export default function Home() {
             PAY BUTTON
           </motion.span>
         </p>
-        <p className="py-12 text-2xl w-1/3 mx-auto">
+        <p className="py-12 text-xl lg:w-1/3 lg:px-0 px-8 mx-auto">
           This is your personal pay button. Use it to sell professional services
           to any business in the world.
         </p>
         <div className="flex  justify-center">
-          <button className="rounded-full px-8 py-4 text-lg bg-[#002B28] text-white  mr-4">
+          <button className="rounded-full lg:px-8 px-4 py-4 text-lg bg-[#002B28] text-white  mr-4">
             Open your account
           </button>
-          <button className="rounded-full px-8 py-4 text-lg text-black border bg-[#F1F4F0]  mr-4">
+          <button className="rounded-full lg:px-8 py-4 px-4 text-lg text-black border bg-[#F1F4F0]  mr-4">
             Learn more
           </button>
         </div>
@@ -48,11 +48,11 @@ export default function Home() {
       </div>
 
       <div
-        className="bg-[#F5DA2A] py-40 my-20 px-20 flex flex-col justify-center items-center text-xl"
+        className="bg-[#F5DA2A] lg:py-40 py-20 my-20 lg:px-20 flex flex-col justify-center items-center text-xl"
         id="part3"
       >
-        <p className="">RUUL IN A NUTSHELL</p>
-        <p className="text-6xl/20 text-[#002B28] text-center w-2/3 mx-auto overflow-hidden">
+        <p className="pb-8">RUUL IN A NUTSHELL</p>
+        <p className="xl:text-6xl/20 lg:text-4xl/20 text-2xl/11 text-[#002B28] text-center lg:w-2/3 lg:px-0 px-8 mx-auto overflow-hidden">
           Ruul resells your professional services
           <motion.span
             initial={{ x: 0 }}
@@ -90,7 +90,7 @@ export default function Home() {
         <Tabs>
           <TabTitle>Billing & Checkout</TabTitle>
           <TabContent>
-            <div className="p-24 bg-[#F1F4F0] rounded-xl mb-8 flex flex-col justify-center items-center">
+            <div className="lg:p-24 p-8 m-4 bg-[#F1F4F0] rounded-xl mb-8 flex flex-col justify-center items-center">
               <p className="my-4 text-lg">
                 Provide services. Bill your client. Get paid. Repeat. All with
                 Ruul’s Billing & Checkout system.
@@ -114,7 +114,7 @@ export default function Home() {
           </TabContent>
           <TabTitle>Payment Collection</TabTitle>
           <TabContent>
-            <div className="p-24 bg-[#F1F4F0] rounded-xl mb-8 flex flex-col justify-center items-center">
+            <div className="lg:p-24 p-8 m-4 bg-[#F1F4F0] rounded-xl mb-8 flex flex-col justify-center items-center">
               <p className="my-4 text-lg">
                 Provide services. Bill your client. Get paid. Repeat. All with
                 Ruul’s Billing & Checkout system.
@@ -138,7 +138,7 @@ export default function Home() {
           </TabContent>
           <TabTitle>Tax & Compliance</TabTitle>
           <TabContent>
-            <div className="p-24 bg-[#F1F4F0] rounded-xl mb-8 flex flex-col justify-center items-center">
+            <div className="lg:p-24 p-8 m-4 bg-[#F1F4F0] rounded-xl mb-8 flex flex-col justify-center items-center">
               <p className="my-4 text-lg">
                 Provide services. Bill your client. Get paid. Repeat. All with
                 Ruul’s Billing & Checkout system.
@@ -162,7 +162,7 @@ export default function Home() {
           </TabContent>
           <TabTitle>CRM & Analytics</TabTitle>
           <TabContent>
-            <div className="p-24 bg-[#F1F4F0] rounded-xl mb-8 flex flex-col justify-center items-center">
+            <div className="lg:p-24 p-8 m-4 bg-[#F1F4F0] rounded-xl mb-8 flex flex-col justify-center items-center">
               <p className="my-4 text-lg">
                 Provide services. Bill your client. Get paid. Repeat. All with
                 Ruul’s Billing & Checkout system.
@@ -187,8 +187,8 @@ export default function Home() {
         </Tabs>
       </div>
 
-      <div className="flex justify-center w-2/3 items-center mx-auto py-20">
-        <div className="flex flex-col items-center basis-1/3 mx-12">
+      <div className="flex lg:flex-row flex-col justify-center xl:w-2/3 lg:w-4/5 items-center mx-auto py-20">
+        <div className="flex  flex-col items-center basis-1/3 mx-12 lg:my-0 my-8">
           <img
             src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6718745a731ac80375b19807_icon-1.avif"
             alt=""
@@ -200,7 +200,8 @@ export default function Home() {
             currencies.
           </p>
         </div>
-        <div className="flex flex-col items-center basis-1/3 mx-12">
+        <div className="border mx-auto border w-1/2 lg:hidden block border-zinc-300"></div>
+        <div className="flex flex-col items-center basis-1/3 mx-12 lg:my-0 my-8">
           <img
             src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6718745993f3aece411b31ee_icon-2.avif"
             alt=""
@@ -212,7 +213,9 @@ export default function Home() {
             invoices.
           </p>
         </div>
-        <div className="flex flex-col items-center basis-1/3 mx-12">
+        <div className="border mx-auto border w-1/2 lg:hidden block border-zinc-300"></div>
+
+        <div className="flex flex-col items-center basis-1/3 mx-12 lg:my-0 my-8">
           <img
             src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6718745a1597b1ca9285c3ef_icon-3.avif"
             alt=""
@@ -229,9 +232,9 @@ export default function Home() {
         <Carousel2 />
       </div>
 
-      <div className="xl:py-40 xl:px-80 lg:px-40">
-        <div className="flex  justify-between">
-          <div className="flex flex-col basis-1/2">
+      <div className="xl:py-40 2xl:px-60 xl:px-60 lg:px-40">
+        <div className="flex xl:flex-row flex-col justify-between">
+          <div className="flex flex-col basis-1/2 lg:px-0 px-8 pt-12">
             <p className="text-lg my-4 font-bold text-[#002B28]">OUR MODEL</p>
             <p className="text-xl my-4 tracking-[3px]">
               Ruul, as your
@@ -242,16 +245,16 @@ export default function Home() {
               business clients compliantly in 190 countries.
             </p>
 
-            <div className="flex py-8">
-              <button className="bg-[#002B28] text-white px-6 py-4 rounded-full border my-4">
+            <div className="flex lg:py-8 py-0 pb-8">
+              <button className="bg-[#002B28] text-white lg:px-6 px-4 lg:py-4 py-3 rounded-full border my-4">
                 Learn more
               </button>
-              <button className="px-6 py-4 rounded-full border my-4 mx-4">
+              <button className="lg:px-6 px-4 lg:py-4 py-3 rounded-full border my-4 mx-4">
                 Open your account
               </button>
             </div>
           </div>
-          <div className="flex flex-col basis-1/2 ml-16 mr-12">
+          <div className="flex flex-col basis-1/2  lg:px-0 px-8 ">
             <div className="flex pb-12 border-b justify-between">
               <div className="flex flex-col mr-4">
                 <p className="my-4 font-bold">B2B Invoicing</p>
@@ -281,27 +284,27 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="py-12">
-          <p className="my-8 font-bold tracking-wider">HOW IT WORKS</p>
-          <div className="flex">
-            <div className="flex flex-col basis-1/4 px-8 py-8 mr-4 bg-[#F5DA2A] rounded-xl">
+        <div className="py-12 ">
+          <p className="my-8 px-8 font-bold tracking-wider">HOW IT WORKS</p>
+          <div className="2xl:flex 2xl:flex-row flex-col xl:px-0 lg:grid lg:grid-cols-2 lg:p-12 p-4">
+            <div className="flex flex-col  px-8 py-8 lg:mx-4 bg-[#F5DA2A] rounded-xl my-4">
               <p className="px-6 py-4 my-4 tracking-[2] rounded-lg bg-[#002B28] w-16 text-white text-lg">1</p>
               <p className="text-lg py-4 text-[#002B28] font-semibold">Authorize Ruul</p>
               <p className="text-lg py-4 text-[#002B28]">Authorize Ruul as your Merchant of Record to sell your services and collect payment.</p>
             </div>
-            <div className="flex flex-col basis-1/4 px-8 py-8 mx-4 bg-[#F5DA2A] rounded-xl">
+            <div className="flex flex-col  px-8 py-8 lg:mx-4 bg-[#F5DA2A] rounded-xl my-4">
               <p className="px-6 py-4 my-4 tracking-[2] rounded-lg bg-[#002B28] w-16 text-white text-lg">2</p>
               <p className="text-lg py-4 text-[#002B28] font-semibold">Payment Request
               </p>
               <p className="text-lg py-4 text-[#002B28]">Submit your payment request with details such as service fee, payout currency, etc.</p>
             </div>
-            <div className="flex flex-col basis-1/4 px-8 py-8 mx-4 bg-[#F5DA2A] rounded-xl">
+            <div className="flex flex-col  px-8 py-8 lg:mx-4 bg-[#F5DA2A] rounded-xl my-4">
               <p className="px-6 py-4 my-4 tracking-[2] rounded-lg bg-[#002B28] w-16 text-white text-lg">3</p>
               <p className="text-lg py-4 text-[#002B28] font-semibold">Billing & Checkout
               </p>
               <p className="text-lg py-4 text-[#002B28]">Ruul, as your Merchant of Record, onboards your client, handles invoicing and payment collection.</p>
             </div>
-            <div className="flex flex-col basis-1/4 px-8 py-8 mx-4 bg-[#F5DA2A] rounded-xl">
+            <div className="flex flex-col  px-8 py-8 lg:mx-4 bg-[#F5DA2A] rounded-xl my-4">
               <p className="px-6 py-4 my-4 tracking-[2] rounded-lg bg-[#002B28] w-16 text-white text-lg">4</p>
               <p className="text-lg py-4 text-[#002B28] font-semibold">Payout
               </p>
