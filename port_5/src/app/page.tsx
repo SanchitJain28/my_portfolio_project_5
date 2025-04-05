@@ -4,6 +4,7 @@ import Navbar from "./(app)/components/Navbar";
 import { Montserrat } from "next/font/google";
 import Carousel1 from "./(app)/components/Carousel1";
 import { TabContent, Tabs, TabTitle } from "./(app)/components/Tabs";
+import Carousel2 from "./(app)/components/Carousel2";
 const montserrat500 = Montserrat({
   subsets: ["latin"],
   weight: "500",
@@ -188,26 +189,45 @@ export default function Home() {
 
       <div className="flex justify-center w-2/3 items-center mx-auto py-20">
         <div className="flex flex-col items-center basis-1/3 mx-12">
-          <img src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6718745a731ac80375b19807_icon-1.avif" alt="" className="w-44" />
-          <p className="text-2xl py-4">Global coverage
+          <img
+            src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6718745a731ac80375b19807_icon-1.avif"
+            alt=""
+            className="w-44"
+          />
+          <p className="text-2xl py-4">Global coverage</p>
+          <p className="text-xl text-center py-2">
+            Invoice your business clients in 190 countries and get paid in 140
+            currencies.
           </p>
-          <p className="text-xl text-center py-2">Invoice your business clients in 190 countries and get paid in 140 currencies.</p>
         </div>
         <div className="flex flex-col items-center basis-1/3 mx-12">
-          <img src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6718745993f3aece411b31ee_icon-2.avif" alt="" className="w-44" />
-          <p className="text-2xl py-4">Faster payments
+          <img
+            src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6718745993f3aece411b31ee_icon-2.avif"
+            alt=""
+            className="w-44"
+          />
+          <p className="text-2xl py-4">Faster payments</p>
+          <p className="text-xl text-center py-2">
+            Reduce your payment collection time, and cut down on unpaid
+            invoices.
           </p>
-          <p className="text-xl text-center py-2">Reduce your payment collection time, and cut down on unpaid invoices.</p>
         </div>
         <div className="flex flex-col items-center basis-1/3 mx-12">
-          <img src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6718745a1597b1ca9285c3ef_icon-3.avif" alt="" className="w-44" />
-          <p className="text-2xl py-4">Pay-as-you-go
+          <img
+            src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6718745a1597b1ca9285c3ef_icon-3.avif"
+            alt=""
+            className="w-44"
+          />
+          <p className="text-2xl py-4">Pay-as-you-go</p>
+          <p className="text-xl text-center py-2">
+            No upfront payments or monthly subscriptions. Pay only when you use.
           </p>
-          <p className="text-xl text-center py-2">No upfront payments or monthly subscriptions. Pay only when you use.</p>
         </div>
       </div>
 
-      
+      <div className="py-20 overflow-hidden bg-[#BCF5F1]">
+        <Carousel2 />
+      </div>
     </div>
   );
 }

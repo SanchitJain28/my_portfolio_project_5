@@ -22,3 +22,9 @@
 body {
  background-color: #FFFFFF;
 }
+.swiper-wrapper {
+  overflow: visible !important;
+}
+.swiper {
+  overflow: visible !important;
+}
