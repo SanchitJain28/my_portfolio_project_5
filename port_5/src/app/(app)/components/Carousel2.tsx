@@ -20,8 +20,7 @@ export default function Carousel2() {
       <SwiperSlide>
         {({ isActive }) => (
           <motion.div
-
-          animate={{
+            animate={{
               scaleX: isActive ? 1.05 : 1,
               scaleY: isActive ? 1.05 : 1,
               scaleZ: isActive ? 1.05 : 1,
@@ -34,33 +33,191 @@ export default function Carousel2() {
               className="rounded-xl"
             />
             <AnimatePresence>
-                <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.8}} className={`my-4 py-8 ${isActive?"visible"  :"hidden"}`}>
-                  <p className="text-black text-2xl ">Hey i am active</p>
-                </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8 }}
+                className={`
+                  my-4 p-8 ${isActive ? " visible " : " invisible"} bg-white rounded-xl`}
+              >
+                <p className="text-black text-2xl py-2">Tania Sharma</p>
+                <p className="text-black text-xl ">Designer</p>
+              
+                <div className="border my-4 border-zinc-400 w-1/2"></div>
+                <p className="text-black text-lg ">Marek freelances as a photographer during the New Year season, with Ruul helping him manage his income.</p>
+              </motion.div>
             </AnimatePresence>
           </motion.div>
         )}
       </SwiperSlide>
       <SwiperSlide>
-        {" "}
-        <div className="rounded-xl h-80 bg-[#D9C4FB]"></div>
+        {({ isActive }) => (
+          <motion.div
+            animate={{
+              scaleX: isActive ? 1.05 : 1,
+              scaleY: isActive ? 1.05 : 1,
+              scaleZ: isActive ? 1.05 : 1,
+            }}
+            className="rounded-xl"
+          >
+            <img
+              src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/671770323ea6a4d457d5ca69_ravi.avif"
+              alt=""
+              className="rounded-xl"
+            />
+            <AnimatePresence>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8 }}
+                className={`
+                  my-4 p-8 ${isActive ? " visible " : " invisible"} bg-white rounded-xl`}
+              >
+                <p className="text-black text-2xl py-2">Sanket Sharma</p>
+                <p className="text-black text-xl ">Designer and Programmer</p>
+              
+                <div className="border my-4 border-zinc-400 w-1/2"></div>
+                <p className="text-black text-lg ">Marek freelances as a photographer during the New Year season, with Ruul helping him manage his income.</p>
+              </motion.div>
+            </AnimatePresence>
+          </motion.div>
+        )}
       </SwiperSlide>
       <SwiperSlide>
-        {" "}
-        <div className="rounded-xl h-80 bg-[#E35B05]"></div>
+        {({ isActive }) => (
+          <motion.div
+            animate={{
+              scaleX: isActive ? 1.05 : 1,
+              scaleY: isActive ? 1.05 : 1,
+              scaleZ: isActive ? 1.05 : 1,
+            }}
+            className="rounded-xl"
+          >
+            <img
+              src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/671770329ef1137933c0bfc1_talia.avif"
+              alt=""
+              className="rounded-xl"
+            />
+            <AnimatePresence>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8 }}
+                className={`
+                  my-4 p-8 ${isActive ? " visible " : " invisible"} bg-white rounded-xl`}
+              >
+                <p className="text-black text-2xl py-2">Tania Sharma</p>
+                <p className="text-black text-xl ">Designer</p>
+              
+                <div className="border my-4 border-zinc-400 w-1/2"></div>
+                <p className="text-black text-lg ">Marek freelances as a photographer during the New Year season, with Ruul helping him manage his income.</p>
+              </motion.div>
+            </AnimatePresence>
+          </motion.div>
+        )}
       </SwiperSlide>
       <SwiperSlide>
-        {" "}
-        <div className="rounded-xl h-80 bg-[#E35B05]"></div>
+        {({ isActive }) => (
+          <motion.div
+            animate={{
+              scaleX: isActive ? 1.05 : 1,
+              scaleY: isActive ? 1.05 : 1,
+              scaleZ: isActive ? 1.05 : 1,
+            }}
+            className="rounded-xl"
+          >
+            <img
+              src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/671770329ef1137933c0bfc1_talia.avif"
+              alt=""
+              className="rounded-xl"
+            />
+            <AnimatePresence>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8 }}
+                className={`
+                  my-4 p-8 ${isActive ? " visible " : " invisible"} bg-white rounded-xl`}
+              >
+                <p className="text-black text-2xl py-2">Tania Sharma</p>
+                <p className="text-black text-xl ">Designer</p>
+              
+                <div className="border my-4 border-zinc-400 w-1/2"></div>
+                <p className="text-black text-lg ">Marek freelances as a photographer during the New Year season, with Ruul helping him manage his income.</p>
+              </motion.div>
+            </AnimatePresence>
+          </motion.div>
+        )}
       </SwiperSlide>
       <SwiperSlide>
-        {" "}
-        <div className="rounded-xl h-80 bg-[#E35B05]"></div>
+        {({ isActive }) => (
+          <motion.div
+            animate={{
+              scaleX: isActive ? 1.05 : 1,
+              scaleY: isActive ? 1.05 : 1,
+              scaleZ: isActive ? 1.05 : 1,
+            }}
+            className="rounded-xl"
+          >
+            <img
+              src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/671770329ef1137933c0bfc1_talia.avif"
+              alt=""
+              className="rounded-xl"
+            />
+            <AnimatePresence>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8 }}
+                className={`
+                  my-4 p-8 ${isActive ? " visible " : " invisible"} bg-white rounded-xl`}
+              >
+                <p className="text-black text-2xl py-2">Tania Sharma</p>
+                <p className="text-black text-xl ">Designer</p>
+              
+                <div className="border my-4 border-zinc-400 w-1/2"></div>
+                <p className="text-black text-lg ">Marek freelances as a photographer during the New Year season, with Ruul helping him manage his income.</p>
+              </motion.div>
+            </AnimatePresence>
+          </motion.div>
+        )}
       </SwiperSlide>
       <SwiperSlide>
-        {" "}
-        <div className="rounded-xl h-80 bg-[#E35B05]"></div>
+        {({ isActive }) => (
+          <motion.div
+            animate={{
+              scaleX: isActive ? 1.05 : 1,
+              scaleY: isActive ? 1.05 : 1,
+              scaleZ: isActive ? 1.05 : 1,
+            }}
+            className="rounded-xl"
+          >
+            <img
+              src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/671770329ef1137933c0bfc1_talia.avif"
+              alt=""
+              className="rounded-xl"
+            />
+            <AnimatePresence>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8 }}
+                className={`
+                  my-4 p-8 ${isActive ? " visible " : " invisible"} bg-white rounded-xl`}
+              >
+                <p className="text-black text-2xl py-2">Tania Sharma</p>
+                <p className="text-black text-xl ">Designer</p>
+              
+                <div className="border my-4 border-zinc-400 w-1/2"></div>
+                <p className="text-black text-lg ">Marek freelances as a photographer during the New Year season, with Ruul helping him manage his income.</p>
+              </motion.div>
+            </AnimatePresence>
+          </motion.div>
+        )}
       </SwiperSlide>
+      
+      
+     
     </Swiper>
   );
 }

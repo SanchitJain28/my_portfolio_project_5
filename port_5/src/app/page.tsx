@@ -228,6 +228,88 @@ export default function Home() {
       <div className="py-20 overflow-hidden bg-[#BCF5F1]">
         <Carousel2 />
       </div>
+
+      <div className="xl:py-40 xl:px-80 lg:px-40">
+        <div className="flex  justify-between">
+          <div className="flex flex-col basis-1/2">
+            <p className="text-lg my-4 font-bold text-[#002B28]">OUR MODEL</p>
+            <p className="text-xl my-4 tracking-[3px]">
+              Ruul, as your
+              <span className="bg-[#F5DA2A] px-2 py-1 rounded-lg mx-2">
+                Merchant of Record
+              </span>
+              ,is the legal entity selling your professional services to your
+              business clients compliantly in 190 countries.
+            </p>
+
+            <div className="flex py-8">
+              <button className="bg-[#002B28] text-white px-6 py-4 rounded-full border my-4">
+                Learn more
+              </button>
+              <button className="px-6 py-4 rounded-full border my-4 mx-4">
+                Open your account
+              </button>
+            </div>
+          </div>
+          <div className="flex flex-col basis-1/2 ml-16 mr-12">
+            <div className="flex pb-12 border-b justify-between">
+              <div className="flex flex-col mr-4">
+                <p className="my-4 font-bold">B2B Invoicing</p>
+                <p className="">
+                  Provides B2B invoices to clients for easy accounting.
+                </p>
+              </div>
+              <div className="flex flex-col">
+                <p className="my-4 font-bold">Global Sales Tax</p>
+                <p className="">
+                  Handles global sales tax charging and remittance.
+                </p>
+              </div>
+            </div>
+            <div className="flex pt-12  justify-between">
+              <div className="flex flex-col mr-4">
+                <p className="my-4 font-bold">Payment Options</p>
+                <p className="">
+                  Offers local & international payment methods.
+                </p>
+              </div>
+              <div className="flex flex-col">
+                <p className="my-4 font-bold">Onboarding & Support</p>
+                <p className="">Handles all payment-related support queries.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="py-12">
+          <p className="my-8 font-bold tracking-wider">HOW IT WORKS</p>
+          <div className="flex">
+            <div className="flex flex-col basis-1/4 px-8 py-8 mr-4 bg-[#F5DA2A] rounded-xl">
+              <p className="px-6 py-4 my-4 tracking-[2] rounded-lg bg-[#002B28] w-16 text-white text-lg">1</p>
+              <p className="text-lg py-4 text-[#002B28] font-semibold">Authorize Ruul</p>
+              <p className="text-lg py-4 text-[#002B28]">Authorize Ruul as your Merchant of Record to sell your services and collect payment.</p>
+            </div>
+            <div className="flex flex-col basis-1/4 px-8 py-8 mx-4 bg-[#F5DA2A] rounded-xl">
+              <p className="px-6 py-4 my-4 tracking-[2] rounded-lg bg-[#002B28] w-16 text-white text-lg">2</p>
+              <p className="text-lg py-4 text-[#002B28] font-semibold">Payment Request
+              </p>
+              <p className="text-lg py-4 text-[#002B28]">Submit your payment request with details such as service fee, payout currency, etc.</p>
+            </div>
+            <div className="flex flex-col basis-1/4 px-8 py-8 mx-4 bg-[#F5DA2A] rounded-xl">
+              <p className="px-6 py-4 my-4 tracking-[2] rounded-lg bg-[#002B28] w-16 text-white text-lg">3</p>
+              <p className="text-lg py-4 text-[#002B28] font-semibold">Billing & Checkout
+              </p>
+              <p className="text-lg py-4 text-[#002B28]">Ruul, as your Merchant of Record, onboards your client, handles invoicing and payment collection.</p>
+            </div>
+            <div className="flex flex-col basis-1/4 px-8 py-8 mx-4 bg-[#F5DA2A] rounded-xl">
+              <p className="px-6 py-4 my-4 tracking-[2] rounded-lg bg-[#002B28] w-16 text-white text-lg">4</p>
+              <p className="text-lg py-4 text-[#002B28] font-semibold">Payout
+              </p>
+              <p className="text-lg py-4 text-[#002B28]">Ruul initiates the payout to your preferred account immediately and handles sales tax compliance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
