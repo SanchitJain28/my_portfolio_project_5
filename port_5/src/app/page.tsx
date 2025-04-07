@@ -232,7 +232,7 @@ export default function Home() {
         <Carousel2 />
       </div>
 
-      <div className="xl:py-40 2xl:px-60 xl:px-60 lg:px-40">
+      <div className="xl:pt-40 xl:pb-10 2xl:px-60 xl:px-60 lg:px-40">
         <div className="flex xl:flex-row flex-col justify-between">
           <div className="flex flex-col basis-1/2 lg:px-0 px-8 pt-12">
             <p className="text-lg my-4 font-bold text-[#002B28]">OUR MODEL</p>
@@ -288,29 +288,102 @@ export default function Home() {
           <p className="my-8 px-8 font-bold tracking-wider">HOW IT WORKS</p>
           <div className="2xl:flex 2xl:flex-row flex-col xl:px-0 lg:grid lg:grid-cols-2 lg:p-12 p-4">
             <div className="flex flex-col  px-8 py-8 lg:mx-4 bg-[#F5DA2A] rounded-xl my-4">
-              <p className="px-6 py-4 my-4 tracking-[2] rounded-lg bg-[#002B28] w-16 text-white text-lg">1</p>
-              <p className="text-lg py-4 text-[#002B28] font-semibold">Authorize Ruul</p>
-              <p className="text-lg py-4 text-[#002B28]">Authorize Ruul as your Merchant of Record to sell your services and collect payment.</p>
+              <p className="px-6 py-4 my-4 tracking-[2] rounded-lg bg-[#002B28] w-16 text-white text-lg">
+                1
+              </p>
+              <p className="text-lg py-4 text-[#002B28] font-semibold">
+                Authorize Ruul
+              </p>
+              <p className="text-lg py-4 text-[#002B28]">
+                Authorize Ruul as your Merchant of Record to sell your services
+                and collect payment.
+              </p>
             </div>
             <div className="flex flex-col  px-8 py-8 lg:mx-4 bg-[#F5DA2A] rounded-xl my-4">
-              <p className="px-6 py-4 my-4 tracking-[2] rounded-lg bg-[#002B28] w-16 text-white text-lg">2</p>
-              <p className="text-lg py-4 text-[#002B28] font-semibold">Payment Request
+              <p className="px-6 py-4 my-4 tracking-[2] rounded-lg bg-[#002B28] w-16 text-white text-lg">
+                2
               </p>
-              <p className="text-lg py-4 text-[#002B28]">Submit your payment request with details such as service fee, payout currency, etc.</p>
+              <p className="text-lg py-4 text-[#002B28] font-semibold">
+                Payment Request
+              </p>
+              <p className="text-lg py-4 text-[#002B28]">
+                Submit your payment request with details such as service fee,
+                payout currency, etc.
+              </p>
             </div>
             <div className="flex flex-col  px-8 py-8 lg:mx-4 bg-[#F5DA2A] rounded-xl my-4">
-              <p className="px-6 py-4 my-4 tracking-[2] rounded-lg bg-[#002B28] w-16 text-white text-lg">3</p>
-              <p className="text-lg py-4 text-[#002B28] font-semibold">Billing & Checkout
+              <p className="px-6 py-4 my-4 tracking-[2] rounded-lg bg-[#002B28] w-16 text-white text-lg">
+                3
               </p>
-              <p className="text-lg py-4 text-[#002B28]">Ruul, as your Merchant of Record, onboards your client, handles invoicing and payment collection.</p>
+              <p className="text-lg py-4 text-[#002B28] font-semibold">
+                Billing & Checkout
+              </p>
+              <p className="text-lg py-4 text-[#002B28]">
+                Ruul, as your Merchant of Record, onboards your client, handles
+                invoicing and payment collection.
+              </p>
             </div>
             <div className="flex flex-col  px-8 py-8 lg:mx-4 bg-[#F5DA2A] rounded-xl my-4">
-              <p className="px-6 py-4 my-4 tracking-[2] rounded-lg bg-[#002B28] w-16 text-white text-lg">4</p>
-              <p className="text-lg py-4 text-[#002B28] font-semibold">Payout
+              <p className="px-6 py-4 my-4 tracking-[2] rounded-lg bg-[#002B28] w-16 text-white text-lg">
+                4
               </p>
-              <p className="text-lg py-4 text-[#002B28]">Ruul initiates the payout to your preferred account immediately and handles sales tax compliance.</p>
+              <p className="text-lg py-4 text-[#002B28] font-semibold">
+                Payout
+              </p>
+              <p className="text-lg py-4 text-[#002B28]">
+                Ruul initiates the payout to your preferred account immediately
+                and handles sales tax compliance.
+              </p>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center xl:pb-40">
+        <p className="text-lg ">UNIQUE FEATURES</p>
+        <p className="lg:text-6xl text-[#002B28] font-semibold text-3xl py-4 text-center">
+          What makes Ruul <br className="lg:block hidden" />
+          so different?
+        </p>
+        <div className="flex">
+          <div className="flex overflow-hidden justify-between bg-[#D5BEFA] rounded-xl  basis-1/2">
+            <div className="mx-2 my-4 absolute">
+              <p className="pl-4 text-2xl font py-4 ">Crypto payout</p>
+            </div>
+            <img
+              src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/66e123ebfcc7148c937889a9_cryptopMan-p-500.png"
+              alt=""
+              className="w-80 mx-40"
+            />
+          </div>
+          <div className="flex flex-col basis-1/4">
+            {" "}
+            <p className="pl-4 text-lg py-4">Crypto payout</p>
+            <img
+              src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/66e123ebfcc7148c937889a9_cryptopMan-p-500.png"
+              alt=""
+              className="w-80"
+            />
+          </div>
+          <div className="flex flex-col basis-1/4 hidden">
+            {" "}
+            <p className="pl-4 text-lg py-4">Crypto payout</p>
+            <img
+              src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/66e123ebfcc7148c937889a9_cryptopMan-p-500.png"
+              alt=""
+              className="w-80"
+            />
+          </div>
+        </div>
+        <div className="flex">
+          <div className="flex flex-col basis-1/2"></div>
+          <div className="flex flex-col basis-1/4"></div>
+          <div className="flex flex-col basis-1/4 "></div>
+        </div>
+        <div className="flex">
+          <div className="flex flex-col basis-1/2 hidden"></div>
+          <div className="flex flex-col basis-1/4"></div>
+          <div className="flex flex-col basis-1/4 "></div>
         </div>
       </div>
     </div>
