@@ -339,14 +339,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center xl:pb-40">
+      <div className="flex flex-col justify-center items-center 2xl:w-66/100 xl:75/100 mx-auto xl:py-40 xl:pt-20 lg:px-40 px-8">
         <p className="text-lg ">UNIQUE FEATURES</p>
         <p className="lg:text-6xl text-[#002B28] font-semibold text-3xl py-4 text-center">
           What makes Ruul <br className="lg:block hidden" />
           so different?
         </p>
-        <div className="flex">
-          <div className="flex overflow-hidden justify-between bg-[#D5BEFA] rounded-xl  basis-1/2">
+
+        <div className="flex py-4">
+          <div className="flex overflow-hidden justify-between bg-[#D5BEFA] rounded-3xl  basis-1/2">
             <div className="mx-2 my-4 absolute">
               <p className="pl-4 text-2xl font py-4 ">Crypto payout</p>
             </div>
@@ -356,16 +357,20 @@ export default function Home() {
               className="w-80 mx-40"
             />
           </div>
-          <div className="flex flex-col basis-1/4">
+          <div className="flex overflow-hidden flex-col basis-1/4 bg-[#F1F4F0] mx-4 rounded-3xl ">
             {" "}
-            <p className="pl-4 text-lg py-4">Crypto payout</p>
-            <img
-              src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/66e123ebfcc7148c937889a9_cryptopMan-p-500.png"
-              alt=""
-              className="w-80"
-            />
+            <div className="mx-2 my-4 ">
+              <p className="pl-4 text-2xl font py-4 ">Crypto payout</p>
+            </div>
+            <div className="flex justify-end items-end">
+              <img
+                src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/66d6b1ddfa48c134cb3a3ebf_support%20(4)%201.png"
+                alt=""
+                className="w-28"
+              />
+            </div>
           </div>
-          <div className="flex flex-col basis-1/4 hidden">
+          <div className="flex flex-col basis-1/4 invisible">
             {" "}
             <p className="pl-4 text-lg py-4">Crypto payout</p>
             <img
@@ -375,15 +380,85 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="flex">
-          <div className="flex flex-col basis-1/2"></div>
-          <div className="flex flex-col basis-1/4"></div>
-          <div className="flex flex-col basis-1/4 "></div>
+
+        <div className="flex py-4">
+          <div className="flex overflow-hidden flex-col basis-1/4 bg-[#F1F4F0]  rounded-3xl">
+            {" "}
+            <div className="mx-2 my-4 ">
+              <p className="pl-4 text-2xl font py-4 ">Crypto payout</p>
+            </div>
+            <div className="flex justify-end items-end">
+              <img
+                src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/66e12bf2bef92096cd1fa685_vector_coins.png"
+                alt=""
+                className="w-28"
+              />
+            </div>
+          </div>
+          <div className="flex overflow-hidden justify-between bg-[#002B28] rounded-3xl ml-4 basis-1/2">
+            <div className="mx-2 my-4 absolute">
+              <p className="pl-4 text-2xl font py-4 ">Crypto payout</p>
+            </div>
+            <img
+              src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/66e127a306baa38b014a68b9_vector_money.png"
+              alt=""
+              className="w-52 mx-40"
+            />
+          </div>
+
+          <div className="flex overflow-hidden flex-col basis-1/4 bg-[#F1F4F0]  rounded-3xl ml-4">
+            {" "}
+            <div className="mx-2 my-4 ">
+              <p className="pl-4 text-2xl font py-4 ">Crypto payout</p>
+            </div>
+            <div className="flex justify-end items-end">
+              <img
+                src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/66d6b1ddfa48c134cb3a3ebf_support%20(4)%201.png"
+                alt=""
+                className="w-28"
+              />
+            </div>
+          </div>
         </div>
-        <div className="flex">
-          <div className="flex flex-col basis-1/2 hidden"></div>
-          <div className="flex flex-col basis-1/4"></div>
-          <div className="flex flex-col basis-1/4 "></div>
+
+        <div className="flex py-4">
+          <div className="flex overflow-hidden flex-col basis-1/4 bg-[#F1F4F0]  rounded-3xl invisible">
+            {" "}
+            <div className="mx-2 my-4 ">
+              <p className="pl-4 text-2xl font py-4 ">Crypto payout</p>
+            </div>
+            <div className="flex justify-end items-end">
+              <img
+                src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/66d6b1ddfa48c134cb3a3ebf_support%20(4)%201.png"
+                alt=""
+                className="w-28"
+              />
+            </div>
+          </div>
+
+          <div className="flex overflow-hidden flex-col basis-1/4 bg-[#F1F4F0]  rounded-3xl">
+            {" "}
+            <div className="mx-2 my-4 ">
+              <p className="pl-4 text-2xl font py-4 ">Crypto payout</p>
+            </div>
+            <div className="flex justify-end items-end">
+              <img
+                src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/66d6b1ddfa48c134cb3a3ebf_support%20(4)%201.png"
+                alt=""
+                className="w-28"
+              />
+            </div>
+          </div>
+          <div className="flex overflow-hidden justify-between bg-[#F5DA2A] ml-4 rounded-3xl  basis-1/2">
+            <div className="mx-2 my-4 absolute">
+              <p className="pl-4 text-2xl font py-4 ">Crypto payout</p>
+            </div>
+            <img
+              src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/66e12d57954586b3cc327a51_earlypay_-p-500.png"
+              alt=""
+              className="w-80 mx-40"
+            />
+          </div>
         </div>
       </div>
     </div>
